@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8227c941-16dd-4e73-a9f6-2a5dcd389032" name="默认变更列表" comment="Revert &quot;才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图&quot;&#10;&#10;This reverts commit 7cc132a9" />
+    <list default="true" id="8227c941-16dd-4e73-a9f6-2a5dcd389032" name="默认变更列表" comment="Revert &quot;才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图&quot;&#10;&#10;This reverts commit 7cc132a9">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Home.vue" afterDir="false" />
+    </list>
     <list id="7409663a-0cb7-4db8-974d-0539382c1135" name="Revert &quot;才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口 echarts统计季度分布折线图&quot;" comment="才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +73,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="所有位置" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -177,7 +182,7 @@
       <workItem from="1665392718361" duration="9289000" />
       <workItem from="1665406051703" duration="161000" />
       <workItem from="1665406438336" duration="136000" />
-      <workItem from="1665408272604" duration="550000" />
+      <workItem from="1665408272604" duration="1919000" />
     </task>
     <task id="LOCAL-00001" summary="初步框架 前后端同步  未使用mybatis-plus">
       <created>1664261692934</created>
@@ -348,7 +353,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
