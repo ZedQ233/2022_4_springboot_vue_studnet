@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*左边距5px*/
+.ml-5{
+    margin-left: 5px;
+}
+/*右边距5px*/
+.mr-5{
+    margin-right: 5px;
+}
+
+.pd-10{
+   padding: 10px 0;
+}
+
+.dis{
+    display: none;
+}
+
+.el-table__row:hover .el-table_1_column_8   .el-table__cell{
+    display: block;
+}
+

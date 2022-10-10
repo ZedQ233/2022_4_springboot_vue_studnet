@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8227c941-16dd-4e73-a9f6-2a5dcd389032" name="默认变更列表" comment="Revert &quot;才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图&quot;&#10;&#10;This reverts commit 7cc132a9" />
+    <list id="7409663a-0cb7-4db8-974d-0539382c1135" name="Revert &quot;才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口 echarts统计季度分布折线图&quot;" comment="才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ZedQ" />
+        <option value="千禧" />
+        <option value="‘qianxi’ &lt;‘3112560244@qq.com’&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="后端代码" />
+        <entry key="$PROJECT_DIR$/vue" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\javaweb\apache-maven-3.2.5\repository" />
+        <option name="mavenHome" value="E:\javaweb\apache-maven-3.2.5\apache-maven-3.2.5" />
+        <option name="userSettingsFile" value="E:\javaweb\apache-maven-3.2.5\apache-maven-3.2.5\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2FIbE3dviTeg4IXbPPzZMtwAuKe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="所有位置" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.qx.demo.exception" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\编程\2022-大四\springboot+vue\小白做毕设\后端\src\main\resources\mapper" />
+      <recent name="E:\编程\2022-大四\springboot+vue\小白做毕设\后端\vue\src\utils" />
+      <recent name="E:\编程\2022-大四\springboot+vue\小白做毕设\后端\src\main\resources\templates" />
+      <recent name="E:\编程\2022-大四\springboot+vue\小白做毕设\后端\src\main\java\com\qx\demo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qx.demo.service.impl" />
+      <recent name="com.qx.demo.service" />
+      <recent name="com.qx.demo.mapper" />
+      <recent name="com.qx.demo.config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qx.demo.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/vue/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.serve" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="8227c941-16dd-4e73-a9f6-2a5dcd389032" name="默认变更列表" comment="" />
+      <created>1664182453892</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664182453892</updated>
+      <workItem from="1664182455062" duration="2029000" />
+      <workItem from="1664187868938" duration="945000" />
+      <workItem from="1664189201156" duration="5215000" />
+      <workItem from="1664256443531" duration="13531000" />
+      <workItem from="1664283771365" duration="75000" />
+      <workItem from="1664283884933" duration="2267000" />
+      <workItem from="1664333346539" duration="6607000" />
+      <workItem from="1664355103985" duration="11038000" />
+      <workItem from="1664443609228" duration="8639000" />
+      <workItem from="1664462339759" duration="31000" />
+      <workItem from="1664518376686" duration="8996000" />
+      <workItem from="1664592347337" duration="8549000" />
+      <workItem from="1664717502841" duration="1608000" />
+      <workItem from="1664797086248" duration="7246000" />
+      <workItem from="1664849747022" duration="4484000" />
+      <workItem from="1664872286418" duration="11443000" />
+      <workItem from="1665212658319" duration="4423000" />
+      <workItem from="1665228466959" duration="1396000" />
+      <workItem from="1665229975048" duration="3543000" />
+      <workItem from="1665308082729" duration="4971000" />
+      <workItem from="1665314572748" duration="138000" />
+      <workItem from="1665314737197" duration="5769000" />
+      <workItem from="1665392718361" duration="9289000" />
+      <workItem from="1665406051703" duration="161000" />
+      <workItem from="1665406438336" duration="136000" />
+      <workItem from="1665408272604" duration="550000" />
+    </task>
+    <task id="LOCAL-00001" summary="初步框架 前后端同步  未使用mybatis-plus">
+      <created>1664261692934</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664261692934</updated>
+    </task>
+    <task id="LOCAL-00002" summary="分解为Aside.vue Header.vue User.vue Manage.vue &#10;并实现多组件之间交互&#10;使用系统总线">
+      <created>1664369595996</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664369595996</updated>
+    </task>
+    <task id="LOCAL-00003" summary="添加动态导航  算了 我觉得我并不需要他">
+      <created>1664462276057</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664462276057</updated>
+    </task>
+    <task id="LOCAL-00004" summary="添加动态导航  算了 我觉得我并不需要他">
+      <created>1664462286339</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664462286339</updated>
+    </task>
+    <task id="LOCAL-00005" summary="完成了登录 登陆页面没有找到喜欢的  手打心累">
+      <created>1664546126485</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664546126485</updated>
+    </task>
+    <task id="LOCAL-00006" summary="完成了注册 全局用户显示 头像 个人信息 统一返回接口">
+      <created>1664605618645</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664605618645</updated>
+    </task>
+    <task id="LOCAL-00007" summary="今天出去玩,修改bug调优(划水)">
+      <created>1664719087017</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664719087017</updated>
+    </task>
+    <task id="LOCAL-00008" summary="jwt拦截 优化接口 创建拦截类和拦截注入 修改request配置文件至vue.utils">
+      <created>1664805700313</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664805700313</updated>
+    </task>
+    <task id="LOCAL-00009" summary="文件管理操作页面及接口实现  真删除">
+      <created>1664889725256</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664889725256</updated>
+    </task>
+    <task id="LOCAL-00010" summary="更新个人信息页面  头像  &#10;更新浏览器缓存用户信息">
+      <created>1665314455557</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665314455557</updated>
+    </task>
+    <task id="LOCAL-00011" summary="header 做bus 通过数据总线getUser函数  同步浏览器缓存个人信息user">
+      <created>1665319143956</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665319143956</updated>
+    </task>
+    <task id="LOCAL-00012" summary="修改header 用户信息右对齐">
+      <created>1665321438386</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665321438386</updated>
+    </task>
+    <task id="LOCAL-00013" summary="echarts 会员注册当年季度分布">
+      <created>1665403636084</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665403636084</updated>
+    </task>
+    <task id="LOCAL-00014" summary="才发现 我忘记上传后端了！！！！&#10;后端现在完成了&#10;mybatis-plus 代码生成器 jwt token request &#10;用户接口 文件接口  echarts统计季度分布折线图">
+      <created>1665404293882</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665404293882</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Revert &quot;才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图&quot;&#10;&#10;This reverts commit 7cc132a9">
+      <created>1665404945772</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665404945772</updated>
+    </task>
+    <task id="LOCAL-00016" summary="才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图">
+      <created>1665405375107</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665405375107</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$/vue" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                        <option value="$PROJECT_DIR$/vue" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="初步框架 前后端同步  未使用mybatis-plus" />
+    <MESSAGE value="分解为Aside.vue Header.vue User.vue Manage.vue &#10;并实现多组件之间交互&#10;使用系统总线" />
+    <MESSAGE value="添加动态导航  算了 我觉得我并不需要他" />
+    <MESSAGE value="完成了登录 登陆页面没有找到喜欢的  手打心累" />
+    <MESSAGE value="完成了注册 全局用户显示 头像 个人信息 统一返回接口" />
+    <MESSAGE value="今天出去玩,修改bug调优(划水)" />
+    <MESSAGE value="jwt拦截 优化接口 创建token效验和拦截注入 修改request配置文件至vue.utils" />
+    <MESSAGE value="文件管理操作页面及接口实现  真删除" />
+    <MESSAGE value="更新个人信息页面  头像  &#10;更新浏览器缓存用户信息" />
+    <MESSAGE value="header 做bus 通过数据总线getUser函数  同步浏览器缓存个人信息user" />
+    <MESSAGE value="修改header 用户信息右对齐" />
+    <MESSAGE value="echarts 会员注册当年季度分布" />
+    <MESSAGE value="才发现 我忘记上传后端了！！！！&#10;后端现在完成了&#10;mybatis-plus 代码生成器 jwt token request &#10;用户接口 文件接口  echarts统计季度分布折线图" />
+    <MESSAGE value="Revert &quot;才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图&quot;&#10;&#10;This reverts commit 7cc132a9" />
+    <MESSAGE value="才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图" />
+    <option name="LAST_COMMIT_MESSAGE" value="才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qx/demo/test/KillController.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,0 +1,139 @@
+Index: vue/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"vue\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"scripts\": {\r\n    \"serve\": \"vue-cli-service serve\",\r\n    \"build\": \"vue-cli-service build\"\r\n  },\r\n  \"dependencies\": {\r\n    \"axios\": \"^0.27.2\",\r\n    \"core-js\": \"^3.8.3\",\r\n    \"element-ui\": \"^2.15.9\",\r\n    \"vue\": \"^2.6.14\",\r\n    \"vue-router\": \"^3.5.1\"\r\n  },\r\n  \"devDependencies\": {\r\n    \"@vue/cli-plugin-babel\": \"~5.0.0\",\r\n    \"@vue/cli-plugin-router\": \"~5.0.0\",\r\n    \"@vue/cli-service\": \"~5.0.0\",\r\n    \"vue-template-compiler\": \"^2.6.14\"\r\n  },\r\n  \"browserslist\": [\r\n    \"> 1%\",\r\n    \"last 2 versions\",\r\n    \"not dead\"\r\n  ]\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/vue/package.json b/vue/package.json
+--- a/vue/package.json	
++++ b/vue/package.json	
+@@ -9,6 +9,7 @@
+   "dependencies": {
+     "axios": "^0.27.2",
+     "core-js": "^3.8.3",
++    "echarts": "^5.4.0",
+     "element-ui": "^2.15.9",
+     "vue": "^2.6.14",
+     "vue-router": "^3.5.1"
+Index: vue/src/views/Person.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><template>\r\n    <el-card style=\"width: 500px; padding: 20px; border: 1px solid #ccc\">\r\n      <el-form label-width=\"80px\" size=\"small\">\r\n\r\n        <el-upload\r\n            style=\"text-align: center\"\r\n            class=\"avatar-uploader\"\r\n            action=\"http://localhost:9090/file/upload\"\r\n            :show-file-list=\"false\"\r\n            :on-success=\"handleAvatarSuccess\">\r\n          <img v-if=\"form.avatarUrl\" :src=\"form.avatarUrl\" class=\"avatar\">\r\n          <i v-else class=\"el-icon-plus avatar-uploader-icon\"></i>\r\n        </el-upload>\r\n\r\n        <el-form-item label=\"用户名\">\r\n          <el-input v-model=\"form.username\" autocomplete=\"off\"></el-input>\r\n        </el-form-item>\r\n        <el-form-item label=\"昵称\">\r\n          <el-input v-model=\"form.nickname\" autocomplete=\"off\"></el-input>\r\n        </el-form-item>\r\n        <el-form-item label=\"邮箱\">\r\n          <el-input v-model=\"form.email\" autocomplete=\"off\"></el-input>\r\n        </el-form-item>\r\n        <el-form-item label=\"电话\">\r\n          <el-input v-model=\"form.phone\" autocomplete=\"off\"></el-input>\r\n        </el-form-item>\r\n        <el-form-item label=\"地址\">\r\n          <el-input v-model=\"form.address\" autocomplete=\"off\"></el-input>\r\n        </el-form-item>\r\n        <el-form-item>\r\n          <el-button type=\"primary\" @click=\"save\">确 定</el-button>\r\n        </el-form-item>\r\n      </el-form>\r\n\r\n\r\n    </el-card>\r\n\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n  name: \"Person\",\r\n  data(){\r\n    return{\r\n      //添加用户\r\n      form:{},\r\n      //用户名\r\n      user: localStorage.getItem(\"user\") ? JSON.parse(localStorage.getItem(\"user\")):{}\r\n    }\r\n  },\r\n  created() {\r\n    this.getUser();\r\n  },\r\n  methods:{\r\n    getUser(){\r\n      this.request.post(\"/user/username/\"+this.user.username).then(res =>{\r\n        if(res.code === '200'){\r\n          this.form = res.data\r\n\r\n\r\n        }\r\n      })\r\n    },\r\n    //传到父组件\r\n\r\n    save(){\r\n      this.request.post(\"/user/save\",this.form).then(res =>{\r\n        if(res.code === '200'){\r\n          this.$message.success(\"保存成功\")\r\n\r\n          // 触发父亲方法\r\n          this.$emit(\"syncUser\")\r\n\r\n        }else {\r\n          this.$message.error(res.msg)\r\n        }\r\n      })\r\n\r\n    },\r\n    handleAvatarSuccess(res){\r\n      console.log(res)\r\n      this.form.avatarUrl = res\r\n    }\r\n  }\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n.avatar-uploader .el-upload {\r\n  border: 1px dashed #d9d9d9;\r\n  border-radius: 6px;\r\n  cursor: pointer;\r\n  position: relative;\r\n  overflow: hidden;\r\n}\r\n.avatar-uploader .el-upload:hover {\r\n  border-color: #409EFF;\r\n}\r\n.avatar-uploader-icon {\r\n  font-size: 28px;\r\n  color: #8c939d;\r\n  width: 178px;\r\n  height: 178px;\r\n  line-height: 178px;\r\n  text-align: center;\r\n}\r\n.avatar {\r\n  width: 178px;\r\n  height: 178px;\r\n  display: block;\r\n}\r\n</style>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/vue/src/views/Person.vue b/vue/src/views/Person.vue
+--- a/vue/src/views/Person.vue	
++++ b/vue/src/views/Person.vue	
+@@ -13,7 +13,7 @@
+         </el-upload>
+ 
+         <el-form-item label="用户名">
+-          <el-input v-model="form.username" autocomplete="off"></el-input>
++          <el-input v-model="form.username" disabled autocomplete="off"></el-input>
+         </el-form-item>
+         <el-form-item label="昵称">
+           <el-input v-model="form.nickname" autocomplete="off"></el-input>
+Index: vue/package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/vue/package-lock.json b/vue/package-lock.json
+--- a/vue/package-lock.json	
++++ b/vue/package-lock.json	
+@@ -10,6 +10,7 @@
+       "dependencies": {
+         "axios": "^0.27.2",
+         "core-js": "^3.8.3",
++        "echarts": "^5.4.0",
+         "element-ui": "^2.15.9",
+         "vue": "^2.6.14",
+         "vue-router": "^3.5.1"
+@@ -4602,6 +4603,20 @@
+         "node": ">=6.0.0"
+       }
+     },
++    "node_modules/echarts": {
++      "version": "5.4.0",
++      "resolved": "https://registry.npmmirror.com/echarts/-/echarts-5.4.0.tgz",
++      "integrity": "sha512-uPsO9VRUIKAdFOoH3B0aNg7NRVdN7aM39/OjovjO9MwmWsAkfGyeXJhK+dbRi51iDrQWliXV60/XwLA7kg3z0w==",
++      "dependencies": {
++        "tslib": "2.3.0",
++        "zrender": "5.4.0"
++      }
++    },
++    "node_modules/echarts/node_modules/tslib": {
++      "version": "2.3.0",
++      "resolved": "https://registry.npmmirror.com/tslib/-/tslib-2.3.0.tgz",
++      "integrity": "sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg=="
++    },
+     "node_modules/ee-first": {
+       "version": "1.1.1",
+       "resolved": "https://registry.npmmirror.com/ee-first/-/ee-first-1.1.1.tgz",
+@@ -9699,6 +9714,19 @@
+       "engines": {
+         "node": ">=10"
+       }
++    },
++    "node_modules/zrender": {
++      "version": "5.4.0",
++      "resolved": "https://registry.npmmirror.com/zrender/-/zrender-5.4.0.tgz",
++      "integrity": "sha512-rOS09Z2HSVGFs2dn/TuYk5BlCaZcVe8UDLLjj1ySYF828LATKKdxuakSZMvrDz54yiKPDYVfjdKqcX8Jky3BIA==",
++      "dependencies": {
++        "tslib": "2.3.0"
++      }
++    },
++    "node_modules/zrender/node_modules/tslib": {
++      "version": "2.3.0",
++      "resolved": "https://registry.npmmirror.com/tslib/-/tslib-2.3.0.tgz",
++      "integrity": "sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg=="
+     }
+   },
+   "dependencies": {
+@@ -13259,6 +13287,22 @@
+       "integrity": "sha512-wK2sCs4feiiJeFXn3zvY0p41mdU5VUgbgs1rNsc/y5ngFUijdWd+iIN8eoyuZHKB8xN6BL4PdWmzqFmxNg6V2w==",
+       "dev": true
+     },
++    "echarts": {
++      "version": "5.4.0",
++      "resolved": "https://registry.npmmirror.com/echarts/-/echarts-5.4.0.tgz",
++      "integrity": "sha512-uPsO9VRUIKAdFOoH3B0aNg7NRVdN7aM39/OjovjO9MwmWsAkfGyeXJhK+dbRi51iDrQWliXV60/XwLA7kg3z0w==",
++      "requires": {
++        "tslib": "2.3.0",
++        "zrender": "5.4.0"
++      },
++      "dependencies": {
++        "tslib": {
++          "version": "2.3.0",
++          "resolved": "https://registry.npmmirror.com/tslib/-/tslib-2.3.0.tgz",
++          "integrity": "sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg=="
++        }
++      }
++    },
+     "ee-first": {
+       "version": "1.1.1",
+       "resolved": "https://registry.npmmirror.com/ee-first/-/ee-first-1.1.1.tgz",
+@@ -17272,6 +17316,21 @@
+       "resolved": "https://registry.npmmirror.com/yargs-parser/-/yargs-parser-20.2.9.tgz",
+       "integrity": "sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==",
+       "dev": true
++    },
++    "zrender": {
++      "version": "5.4.0",
++      "resolved": "https://registry.npmmirror.com/zrender/-/zrender-5.4.0.tgz",
++      "integrity": "sha512-rOS09Z2HSVGFs2dn/TuYk5BlCaZcVe8UDLLjj1ySYF828LATKKdxuakSZMvrDz54yiKPDYVfjdKqcX8Jky3BIA==",
++      "requires": {
++        "tslib": "2.3.0"
++      },
++      "dependencies": {
++        "tslib": {
++          "version": "2.3.0",
++          "resolved": "https://registry.npmmirror.com/tslib/-/tslib-2.3.0.tgz",
++          "integrity": "sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg=="
++        }
++      }
+     }
+   }
+ }

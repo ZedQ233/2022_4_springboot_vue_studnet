@@ -1,0 +1,21 @@
+Index: vue/src/components/Header.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><template>\r\n  <div style=\"text-align: left; font-size: 12px;  line-height: 60px; display: flex\">\r\n    <!--        收缩按钮-->\r\n    <div style=\"flex: 1;font-size: 24px\">\r\n      <span :class=\"collapseBtnClass\" style=\"cursor: pointer; font-size: 18px\" @click=\"collapse\"></span>\r\n\r\n\r\n      <!--   //主页页签显示当前页面的路径-->\r\n      <el-breadcrumb class=\"ml-5\" separator=\"/\" style=\"display:inline-block\">\r\n        <el-breadcrumb-item :to=\"'/'\">主页</el-breadcrumb-item>\r\n        <el-breadcrumb-item>{{pathName}}</el-breadcrumb-item>\r\n      </el-breadcrumb>\r\n\r\n    </div>\r\n\r\n\r\n\r\n\r\n    <!--        用户信息      text-align: right 整体从右边开始排位置 -->\r\n    <el-dropdown style=\"width: 150px; cursor: pointer;text-align: right\">\r\n      <div style=\"display: inline-block\">\r\n        <img :src=\"user.avatarUrl\" alt=\"\"\r\n             style=\"width: 30px; border-radius: 50%; position: relative; top: 10px; right: 5px\">\r\n        <span>{{ user.nickname }}</span><i class=\"el-icon-arrow-down\" style=\"margin-left: 5px\"></i>\r\n      </div>\r\n\r\n      <el-dropdown-menu slot=\"dropdown\" >\r\n        <el-dropdown-item>\r\n          <span @click=\"$router.push('person')\">个人信息</span>\r\n        </el-dropdown-item>\r\n        <el-dropdown-item>\r\n          <span @click=\"signOut\">退出登录</span>\r\n        </el-dropdown-item>\r\n      </el-dropdown-menu>\r\n    </el-dropdown>\r\n  </div>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n  name: \"Header\",\r\n  data(){\r\n    return {\r\n      // 收缩按钮动态图表\r\n      collapseBtnClass:\"el-icon-s-fold\",\r\n      // 菜单是否收缩\r\n      isCollapse:false,\r\n      // 菜单默认宽度\r\n      sideWidth:200,\r\n      //主页文字是否隐藏\r\n      LogoText: true,\r\n      //路由变量\r\n      paths:[],\r\n      pathName : \"\",\r\n      //用户名\r\n      user: localStorage.getItem(\"user\") ? JSON.parse(localStorage.getItem(\"user\")):{}\r\n\r\n    }\r\n  },\r\n  methods:{\r\n    //导航收缩\r\n    collapse(){\r\n      this.isCollapse = !this.isCollapse;\r\n      if(this.isCollapse){\r\n        this.sideWidth= 64\r\n        this.collapseBtnClass = \"el-icon-s-unfold\"\r\n        this.LogoText = false\r\n      }else {\r\n        this.sideWidth = 200\r\n        this.collapseBtnClass = \"el-icon-s-fold\"\r\n        this.LogoText = true\r\n      }\r\n      this.$bus.$emit ('getIsCollapse',this.isCollapse)\r\n      this.$bus.$emit ('getLogoText',this.LogoText)\r\n      this.$bus.$emit ('getSideWidth',this.sideWidth)\r\n\r\n    },\r\n    //登出\r\n    signOut(){\r\n      this.$router.push(\"/login\")\r\n      localStorage.removeItem(\"user\")\r\n      this.$message.success(\"退出成功\")\r\n    }\r\n\r\n  },\r\n  mounted() {\r\n    this.$bus.$on('getIsCollapse',data =>{\r\n      this.isCollapse = data\r\n      console.log(data)\r\n    })\r\n    this.$bus.$on('getCollapseBtnClass',data =>{\r\n      this.isCollapse = data\r\n      console.log(data)\r\n    })\r\n\r\n    this.$bus.$on('getPathName',data =>{\r\n      this.pathName = data\r\n      console.log(data)\r\n    })\r\n    this.$bus.$on('getUser',data =>{\r\n      this.user = data\r\n      console.log(data)\r\n    })\r\n\r\n  },\r\n\r\n\r\n\r\n\r\n  // props:['collapseBtnClass','collapse']\r\n\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n\r\n</style>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/vue/src/components/Header.vue b/vue/src/components/Header.vue
+--- a/vue/src/components/Header.vue	
++++ b/vue/src/components/Header.vue	
+@@ -16,8 +16,8 @@
+ 
+ 
+ 
+-    <!--        用户信息      text-align: right 整体从右边开始排位置 -->
+-    <el-dropdown style="width: 150px; cursor: pointer;text-align: right">
++    <!--        用户信息      text-align: right 整体从右边开始排位置  width 控制总长度 -->
++    <el-dropdown style="width: 300px; cursor: pointer;text-align: right">
+       <div style="display: inline-block">
+         <img :src="user.avatarUrl" alt=""
+              style="width: 30px; border-radius: 50%; position: relative; top: 10px; right: 5px">
