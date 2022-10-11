@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8227c941-16dd-4e73-a9f6-2a5dcd389032" name="默认变更列表" comment="Revert &quot;才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图&quot;&#10;&#10;This reverts commit 7cc132a9">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8227c941-16dd-4e73-a9f6-2a5dcd389032" name="默认变更列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Home.vue" afterDir="false" />
     </list>
@@ -120,7 +119,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="npm.serve">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.qx.demo.Application" />
@@ -182,7 +181,8 @@
       <workItem from="1665392718361" duration="9289000" />
       <workItem from="1665406051703" duration="161000" />
       <workItem from="1665406438336" duration="136000" />
-      <workItem from="1665408272604" duration="1919000" />
+      <workItem from="1665408272604" duration="2644000" />
+      <workItem from="1665466232180" duration="3352000" />
     </task>
     <task id="LOCAL-00001" summary="初步框架 前后端同步  未使用mybatis-plus">
       <created>1664261692934</created>
@@ -296,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665405375107</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="完成home中的 饼状图，折现统计图">
+      <created>1665410258115</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665410258115</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +441,8 @@
     <MESSAGE value="才发现 我忘记上传后端了！！！！&#10;后端现在完成了&#10;mybatis-plus 代码生成器 jwt token request &#10;用户接口 文件接口  echarts统计季度分布折线图" />
     <MESSAGE value="Revert &quot;才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图&quot;&#10;&#10;This reverts commit 7cc132a9" />
     <MESSAGE value="才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图" />
-    <option name="LAST_COMMIT_MESSAGE" value="才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图" />
+    <MESSAGE value="完成home中的 饼状图，折现统计图" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成home中的 饼状图，折现统计图" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,12 +1,54 @@
 <template>
 <div >
+  <el-row gutter="10" style="margin-bottom: 40px">
+    <el-col :span="6">
+      <el-card >
+        <div style="color:#F56C6C;">
+          用户总数
+        </div>
+        <div style="padding: 10px 0;text-align: center;font-weight: bold">
+          100
+        </div>
+      </el-card>
+    </el-col>
+    <el-col :span="6">
+      <el-card>
+        <div style="color:#F56C6C;">
+          销售总数
+        </div>
+        <div style="padding: 10px 0;text-align: center;font-weight: bold">
+          200
+        </div>
+      </el-card>
+    </el-col>
+    <el-col :span="6">
+      <el-card>
+        <div style="color:#F56C6C;">
+          门店总数
+        </div>
+        <div style="padding: 10px 0;text-align: center;font-weight: bold">
+          300
+        </div>
+      </el-card>
+    </el-col>
+    <el-col :span="6">
+      <el-card>
+        <div style="color:#F56C6C;">
+          订单总数
+        </div>
+        <div style="padding: 10px 0;text-align: center;font-weight: bold">
+          500
+        </div>
+      </el-card>
+    </el-col>
+  </el-row>
   <el-row >
     <el-col :span="12">
-      <div id="main" style="width: 500px; height: 400px">  </div>
+      <div id="main" style="width: 500px; height: 450px">  </div>
     </el-col>
 
     <el-col :span="12">
-      <div id="main2" style="width: 500px; height: 400px">  </div>
+      <div id="main2" style="width: 500px; height: 450px">  </div>
     </el-col>
   </el-row>
 
@@ -59,6 +101,15 @@ export default {
       }
     })
       option = {
+      title: {
+        text: '季度新增用户统计',
+        subtext: '今年',
+        left: 'center'
+      },
+      legend: {
+        orient: 'vertical',
+        left: 'left'
+      },
       xAxis: {
         type: 'category',
         data: []
@@ -68,10 +119,12 @@ export default {
       },
       series: [
         {
+          name: 'line',
           data: [],
           type: 'line'
         },
         {
+          name: 'bar',
           data: [],
           type: 'bar'
         }
@@ -95,9 +148,21 @@ export default {
       },
       series: [
         {
-          name: 'Access From',
+          name: '新增会员',
           type: 'pie',
           radius: '50%',
+          label:{
+            normal:{
+              show:true,
+              position:'inner',
+              textStyle:{
+                fontWeight:300,
+                fontsize:16
+              },
+              formatter:'{d}%',
+              color:'white',
+            }
+          },
           data: [
             { value: 0, name: "" },
             { value: 0, name: "" },
