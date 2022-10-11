@@ -115,7 +115,9 @@ public class UserController {
         System.out.println("==========="+user.toString()+"===========");
         //倒叙
 //            queryWrapper.orderByDesc("id");
-            return Result.success(userService.page(new Page<>(pageNum, pageSize), queryWrapper));
+        Page<User> page = userService.page(new Page<>(pageNum, pageSize), queryWrapper);
+
+        return Result.success(page);
     }
 
 

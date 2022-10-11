@@ -13,6 +13,7 @@
 
     </div>
 
+<!--    用户操作栏-->
     <div style="margin: 10px 0">
       <el-button type="primary" @click="insert">新增 <i class="el-icon-circle-plus-outline"></i></el-button>
 
@@ -34,6 +35,8 @@
       <el-button type="primary" @click="exportUser" class="ml-5">导出 <i class="el-icon-top"></i></el-button>
     </div>
 
+
+<!--    表单数据-->
     <el-table :data="tableData" border stripe     @selection-change="handleSelectionChange">
 
       <el-table-column
@@ -47,6 +50,8 @@
       </el-table-column>
       <el-table-column prop="nickname" label="昵称" width="140">
       </el-table-column>
+      <el-table-column prop="sex" label="性别"   :formatter="setSex">
+      </el-table-column>
       <el-table-column prop="address" label="地址">
       </el-table-column>
       <el-table-column prop="email" label="邮箱" width="140">
@@ -55,6 +60,7 @@
       </el-table-column>
       <el-table-column >
         <!--            <div class="dis">-->
+<!--        删除提示-->
         <template slot-scope="scope">
           <el-button type="success" @click="edit(scope)" >编辑 <i class="el-icon-edit"></i></el-button>
           <el-popconfirm
@@ -73,6 +79,8 @@
 
       </el-table-column>
     </el-table>
+
+<!--    分页-->
     <div style="padding: 10px 0">
       <el-pagination
           @size-change="handleSizeChange"
@@ -93,6 +101,10 @@
         </el-form-item>
         <el-form-item label="昵称">
           <el-input v-model="form.nickname" autocomplete="off"></el-input>
+        </el-form-item>
+        <el-form-item label="性别">
+          <el-radio v-model="form.sex" label="0">女</el-radio>
+          <el-radio v-model="form.sex" label="1">男</el-radio>
         </el-form-item>
         <el-form-item label="邮箱">
           <el-input v-model="form.email" autocomplete="off"></el-input>
@@ -228,6 +240,11 @@ export default {
     importUser(){
       this.$message.success("导入成功")
       this.load()
+    },
+
+    //更改0 1 为性别
+    setSex(row,index) {
+      return row.sex == 0 ? '女' : '男'
     }
   },
   created() {

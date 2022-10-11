@@ -18,6 +18,9 @@
         <el-form-item label="昵称">
           <el-input v-model="form.nickname" autocomplete="off"></el-input>
         </el-form-item>
+        <el-form-item label="性别">
+          <el-input v-model="form.sex" autocomplete="off"></el-input>
+        </el-form-item>
         <el-form-item label="邮箱">
           <el-input v-model="form.email" autocomplete="off"></el-input>
         </el-form-item>

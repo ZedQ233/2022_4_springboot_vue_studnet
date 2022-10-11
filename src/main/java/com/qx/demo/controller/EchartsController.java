@@ -48,12 +48,23 @@ public class EchartsController {
         int summer = 0;
         int fall = 0;
         int winter = 0;
-        List<User> userList = userService.list();
 
+        int spring1 = 0;
+        int summer1 = 0;
+        int fall1 = 0;
+        int winter1 = 0;
+        List<User> userList = userService.list();
+        List<User> userListMan = null;
         //filter+hutool 过滤 只要今年注册的用户 转换为list
         userList = userList.stream().filter(
                 user -> new Integer(DateUtil.thisYear()).equals(DateUtil.year(user.getCreateTime()))
         ).collect(Collectors.toList());
+
+        //统计男性用户
+        userListMan = userList.stream().filter(
+                user -> user.getSex() == 1
+        ).collect(Collectors.toList());
+
 
         //筛选各季度人数
         for (User user:userList){
@@ -67,10 +78,32 @@ public class EchartsController {
             }
         }
 
+        //筛选各季度男性人数
+        for (User user:userListMan){
+            Date createTime = user.getCreateTime();
+            Quarter quarter = DateUtil.quarterEnum(createTime);
+            switch (quarter){
+                case Q1:spring1+=1;break;
+                case Q2:summer1+=1;break;
+                case Q3:fall1+=1;break;
+                case Q4:winter1+=1;break;
+            }
+        }
+
         //填充到map 给前端
         Map<String,Object> map = new HashMap<>();
         map.put("x",CollUtil.newArrayList("spring","summer","fall","winter"));
         map.put("y",CollUtil.newArrayList(spring,summer,fall,winter));
+
+        //男性 填充到map 给前端
+        map.put("x1",CollUtil.newArrayList("spring","summer","fall","winter"));
+        map.put("y1",CollUtil.newArrayList(spring1,summer1,fall1,winter1));
+
+        //女性 填充到map 给前端
+        map.put("x0",CollUtil.newArrayList("spring","summer","fall","winter"));
+        map.put("y0",CollUtil.newArrayList(spring-spring1,summer-summer1,fall-fall1,winter-winter1));
+
+
         return Result.success(map);
     }
 
