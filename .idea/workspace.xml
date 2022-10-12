@@ -5,13 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8227c941-16dd-4e73-a9f6-2a5dcd389032" name="默认变更列表" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/Dict.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/RoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/mapper/DictMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/mapper/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/mapper/RoleMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/IMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/IRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/controller.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/Menu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/Role.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/EchartsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/EchartsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/common/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/config/InterceptorConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/utils/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/utils/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/components/Aside.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/Aside.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/Person.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Person.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/User.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/User.vue" afterDir="false" />
     </list>
     <list id="7409663a-0cb7-4db8-974d-0539382c1135" name="Revert &quot;才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口 echarts统计季度分布折线图&quot;" comment="才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +101,7 @@
     <property name="TODO_SCOPE" value="所有位置" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vue/src/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -105,15 +125,16 @@
       <recent name="com.qx.demo.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\编程\2022-大四\springboot+vue\小白做毕设\springboot_vue2_student\vue\src\views" />
+      <recent name="E:\编程\2022-大四\springboot+vue\小白做毕设\springboot_vue2_student\src\main\resources\templates" />
       <recent name="E:\编程\2022-大四\springboot+vue\小白做毕设\后端\src\main\resources\mapper" />
       <recent name="E:\编程\2022-大四\springboot+vue\小白做毕设\后端\vue\src\utils" />
       <recent name="E:\编程\2022-大四\springboot+vue\小白做毕设\后端\src\main\resources\templates" />
-      <recent name="E:\编程\2022-大四\springboot+vue\小白做毕设\后端\src\main\java\com\qx\demo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qx.demo.mapper" />
       <recent name="com.qx.demo.service.impl" />
       <recent name="com.qx.demo.service" />
-      <recent name="com.qx.demo.mapper" />
       <recent name="com.qx.demo.config" />
     </key>
   </component>
@@ -124,17 +145,22 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.serve">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="localhost:8080" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/">
+      <method v="2" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo" />
@@ -155,12 +181,14 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JavaScript 调试.localhost:8080" />
       <item itemvalue="npm.serve" />
       <item itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.serve" />
+        <item itemvalue="JavaScript 调试.localhost:8080" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +226,10 @@
       <workItem from="1665406051703" duration="161000" />
       <workItem from="1665406438336" duration="136000" />
       <workItem from="1665408272604" duration="2644000" />
-      <workItem from="1665466232180" duration="7665000" />
+      <workItem from="1665466232180" duration="8210000" />
+      <workItem from="1665492091618" duration="5545000" />
+      <workItem from="1665546286739" duration="4342000" />
+      <workItem from="1665569698541" duration="10202000" />
     </task>
     <task id="LOCAL-00001" summary="初步框架 前后端同步  未使用mybatis-plus">
       <created>1664261692934</created>
@@ -326,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665472494001</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="完善统计图 男 女 总数三种情况">
+      <created>1665476865824</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1665476865824</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +504,8 @@
     <MESSAGE value="才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图" />
     <MESSAGE value="完成home中的 饼状图，折现统计图" />
     <MESSAGE value="完善统计图" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善统计图" />
+    <MESSAGE value="完善统计图 男 女 总数三种情况" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善统计图 男 女 总数三种情况" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

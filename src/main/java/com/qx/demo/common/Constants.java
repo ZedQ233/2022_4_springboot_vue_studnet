@@ -18,4 +18,8 @@ public interface Constants {
     String CODE_500 = "500";
     //    其他错误
     String CODE_600 = "600";
+
+    String DICT_ICON_ICON = "icon";
+
 }
+

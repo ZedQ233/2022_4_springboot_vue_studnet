@@ -37,15 +37,39 @@
         <span slot="title">系统管理</span>
       </template>
       <el-menu-item-group>
-          <el-menu-item index="/user">
-            <i class="el-icon-user"></i>
-            用户管理
-          </el-menu-item>
+
+<!--        <el-menu-item index="/user">-->
+<!--          <i class="el-icon-user"></i>-->
+<!--          <span slot="title"用户管理></span>-->
+<!--        </el-menu-item>-->
+
+<!--        <el-menu-item index="/role">-->
+<!--          <i class="el-icon-user"></i>-->
+<!--          <span slot="title"></span>-->
+<!--        </el-menu-item>-->
+
+
+        <el-menu-item index="/user">
+          <i class="el-icon-user"></i>
+          <span slot="title">用户管理</span>
+        </el-menu-item>
+
+        <el-menu-item index="/role">
+          <i class="el-icon-user"></i>
+          <span slot="title">角色管理</span>
+        </el-menu-item>
+
+        <el-menu-item index="/menu">
+          <i class="el-icon-menu"></i>
+          <span slot="title">菜单管理</span>
+        </el-menu-item>
 
         <el-menu-item index="/file">
           <i class="el-icon-document"></i>
           <span slot="title">文件管理</span>
         </el-menu-item>
+
+
 
       </el-menu-item-group>
     </el-submenu>

@@ -7,6 +7,8 @@ import Login from "@/views/Login";
 import Register from "@/views/Register";
 import Person from "@/views/Person";
 import File from "@/views/File";
+import Role from "@/views/Role";
+import Menu from "@/views/Menu";
 
 Vue.use(VueRouter)
 
@@ -21,6 +23,16 @@ const routes = [
         path: 'user',
         name: '用户管理',
         component:User
+      },
+      {
+        path: 'role',
+        name: '角色管理',
+        component:Role
+      },
+      {
+        path: 'menu',
+        name: '菜单管理',
+        component:Menu
       },
       {
         path: 'home',

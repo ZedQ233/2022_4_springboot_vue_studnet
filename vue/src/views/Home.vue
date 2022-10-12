@@ -194,8 +194,6 @@ export default {
     ]
   };
 
-
-
     option2 = {
       title: {
         text: '季度新增用户统计',
