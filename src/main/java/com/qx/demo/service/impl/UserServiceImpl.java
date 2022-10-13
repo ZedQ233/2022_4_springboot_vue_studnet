@@ -1,17 +1,26 @@
 package com.qx.demo.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.Log;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.qx.demo.common.Constants;
-import com.qx.demo.entity.LoginUser;
-import com.qx.demo.entity.User;
+import com.qx.demo.entity.*;
 import com.qx.demo.exception.ServiceException;
+import com.qx.demo.mapper.RoleMapper;
+import com.qx.demo.mapper.RoleMenuMapper;
 import com.qx.demo.mapper.UserMapper;
+import com.qx.demo.service.IMenuService;
 import com.qx.demo.service.IUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.qx.demo.utils.TokenUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * <p>
@@ -26,6 +35,15 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
     private static final Log LOG = Log.get();
 
+    @Resource
+    private RoleMapper roleMapper;
+
+    @Resource
+    private RoleMenuMapper roleMenuMapper;
+
+    @Resource
+    private IMenuService menuService;
+
     @Override
     public LoginUser login(LoginUser loginUser) {
         User user= getUserInfo(loginUser);
@@ -35,6 +53,40 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             //token
             String token = TokenUtils.genToken(user.getId().toString(), user.getPassword());
             loginUser.setToken(token);
+
+            //设置用户角色菜单列表
+            //获取role id
+            String flag = user.getRole();
+            QueryWrapper<Role> queryWrapper = new QueryWrapper<>();
+            queryWrapper.eq("flag",flag);
+            Role role = roleMapper.selectOne(queryWrapper);
+            Integer id = role.getId();
+
+            //获取角色id相关菜单id
+            QueryWrapper<RoleMenu> menuQueryWrapper = new QueryWrapper<>();
+            menuQueryWrapper.eq("role_id",id);
+            List<RoleMenu> Menus = roleMenuMapper.selectList(menuQueryWrapper);
+            List<Integer> menuIds = Menus.stream().map(RoleMenu::getMenuId).collect(Collectors.toList());
+
+            //查出所有1，2级菜单
+            List<Menu> chilMenus = menuService.findChilMenus("");
+
+            //筛选角色菜单
+            List<Menu> roleMenus = new ArrayList<>();
+            for (Menu menu : chilMenus) {
+                //筛选一级菜单
+                if(menuIds.contains(menu.getId())){
+                    roleMenus.add(menu);
+                }
+                //筛选二级菜单
+                List<Menu> children = menu.getChildrenMenu();
+                if (children.size()>0){
+                    children.removeIf(child -> !menuIds.contains(child.getId()));
+                }
+            }
+            //菜单添加到
+            loginUser.setMenus(roleMenus);
+
             return loginUser;
         }else {
             throw new ServiceException(Constants.CODE_600,"用户或密码错误");

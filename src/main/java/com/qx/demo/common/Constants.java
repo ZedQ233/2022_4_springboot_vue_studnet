@@ -3,7 +3,7 @@ package com.qx.demo.common;
 /**
  * @author ZedQ
  * @date 2022年10月01日 12:45 
- * @Description:
+ * @Description: 定义常量
  */
 
 
@@ -20,6 +20,12 @@ public interface Constants {
     String CODE_600 = "600";
 
     String DICT_ICON_ICON = "icon";
+
+//    String ROLE_ADMIN = "ROLE_ADMIN";
+//
+//    String ROLE_STUDENT = "ROLE_STUDENT";
+//
+//    String ROLE_TEACHER = "ROLE_TEACHER";
 
 }
 

@@ -101,6 +101,7 @@ public class RoleController {
         return Result.success(page);
     }
 
+    //绑定新的角色分配菜单
     @PostMapping("/roleMenu/{roleId}")
     public Result roleMenu(@PathVariable Integer roleId, @RequestBody List<Integer> menuIds){
         roleService.setRoleMenu(roleId,menuIds);
@@ -108,6 +109,7 @@ public class RoleController {
         return Result.success();
     }
 
+    //获取指定角色id分配的菜单
     @GetMapping("/roleMenu/{roleId}")
     public Result roleMenu(@PathVariable Integer roleId){
         return Result.success(roleService.getRoleMenu(roleId));

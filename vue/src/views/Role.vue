@@ -40,11 +40,11 @@
 
       <el-table-column prop="id" label="ID" width="80">
       </el-table-column>
-      <el-table-column prop="name" label="姓名" width="120">
+      <el-table-column prop="name" label="姓名" >
       </el-table-column>
-      <el-table-column prop="description" label="描述" width="120">
+      <el-table-column prop="description" label="描述" >
       </el-table-column>
-      <el-table-column prop="flag" label="唯一标识" width="120">
+      <el-table-column prop="flag" label="唯一标识" >
       </el-table-column>
 
 

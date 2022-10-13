@@ -81,17 +81,9 @@ public class MenuController {
     //查询所有
     @GetMapping()
     public Result findAll(@RequestParam(defaultValue = "") String menuname) {
-        QueryWrapper<Menu> queryWrapper = new QueryWrapper<>();
-        if (!"".equals(menuname)) {
-            queryWrapper.like("name", menuname);
-        }
-        List<Menu> list = menuService.list(queryWrapper);
-        List<Menu> collect = list.stream().filter(m -> m.getPid() == null).collect(Collectors.toList());
-        for (Menu menu:collect){
-            List<Menu> collectChildren = list.stream().filter(menu1 -> menu1.getPid() == menu.getId()).collect(Collectors.toList());
-            menu.setChildrenMenu(collectChildren);
-        }
-        return Result.success(collect);
+
+        List<Menu> chilMenus = menuService.findChilMenus(menuname);
+        return Result.success(chilMenus);
 
     }
 

@@ -55,6 +55,7 @@ export default {
       //用户名
       user: localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")):{}
 
+
     }
   },
   methods:{

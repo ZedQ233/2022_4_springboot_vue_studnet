@@ -5,33 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8227c941-16dd-4e73-a9f6-2a5dcd389032" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/Dict.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/RoleMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/mapper/DictMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/mapper/MenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/mapper/RoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/mapper/RoleMenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/IMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/IRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/controller.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/Menu.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/Role.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/common/RoleEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/common/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/config/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/utils/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/utils/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/LoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/IMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/IMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/src/components/Aside.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/Aside.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/Manage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Manage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/Role.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Role.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/User.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/User.vue" afterDir="false" />
     </list>
     <list id="7409663a-0cb7-4db8-974d-0539382c1135" name="Revert &quot;才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口 echarts统计季度分布折线图&quot;" comment="才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,6 +102,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="E:\IntelliJ IDEA 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReactorSettings">
@@ -145,16 +133,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="npm.serve">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -229,7 +215,9 @@
       <workItem from="1665466232180" duration="8210000" />
       <workItem from="1665492091618" duration="5545000" />
       <workItem from="1665546286739" duration="4342000" />
-      <workItem from="1665569698541" duration="10202000" />
+      <workItem from="1665569698541" duration="10452000" />
+      <workItem from="1665582354162" duration="65000" />
+      <workItem from="1665655153547" duration="12822000" />
     </task>
     <task id="LOCAL-00001" summary="初步框架 前后端同步  未使用mybatis-plus">
       <created>1664261692934</created>
@@ -364,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665476865824</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="完成 角色管理-菜单分配 菜单管理">
+      <created>1665582132076</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1665582132076</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +500,8 @@
     <MESSAGE value="完成home中的 饼状图，折现统计图" />
     <MESSAGE value="完善统计图" />
     <MESSAGE value="完善统计图 男 女 总数三种情况" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善统计图 男 女 总数三种情况" />
+    <MESSAGE value="完成 角色管理-菜单分配 菜单管理 图标管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成 角色管理-菜单分配 菜单管理 图标管理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -514,6 +510,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/qx/demo/test/KillController.java</url>
           <line>32</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/UserServiceImpl.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,7 +1,7 @@
 <template>
 <div>
   <el-container>
-    <el-aside :width="sideWidth +'px'" style="background-color: rgb(238, 241, 246)" >
+    <el-aside :width="sideWidth +'px'" style="background-color: rgb(238, 241, 246)"  >
       <Aside/>
     </el-aside>
 
@@ -34,7 +34,6 @@ export default {
       sideWidth:200,
       //用户名
       user: localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")):{},
-
     }
   },
   mounted() {
@@ -44,25 +43,26 @@ export default {
 
   },
 
-
+  created() {
+    this.getUser()
+  },
   methods:{
     getUser(){
       this.request.post("/user/username/"+this.user.username).then(res => {
         if (res.code === '200') {
 
           let user = res.data
-          console.log(user)
           user.token =JSON.parse(localStorage.getItem("user")).token
           this.user.token = user.token
           this.user.avatarUrl = user.avatarUrl
           this.user.password = user.password
           this.user.username = user.username
           this.user.nickname = user.nickname
+
           localStorage.setItem("user",JSON.stringify(this.user))
 
           //做bus 传参到header
           this.$bus.$emit ('getUser',this.user)
-
 
         }
       })

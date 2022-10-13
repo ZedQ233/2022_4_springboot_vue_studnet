@@ -50,9 +50,11 @@
       </el-table-column>
       <el-table-column prop="nickname" label="昵称" width="140">
       </el-table-column>
-      <el-table-column prop="sex" label="性别"   :formatter="setSex">
+      <el-table-column prop="role" label="角色" width="140">
       </el-table-column>
-      <el-table-column prop="address" label="地址">
+      <el-table-column prop="sex" label="性别"   :formatter="setSex" width="60">
+      </el-table-column>
+      <el-table-column prop="address" label="地址" >
       </el-table-column>
       <el-table-column prop="email" label="邮箱" width="140">
       </el-table-column>
@@ -102,10 +104,20 @@
         <el-form-item label="昵称">
           <el-input v-model="form.nickname" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="性别">
-          <el-radio v-model="form.sex" label="0">女</el-radio>
-          <el-radio v-model="form.sex" label="1">男</el-radio>
+        <el-form-item label="角色">
+          <el-select clearable v-model="form.role" placeholder="请选择角色" style="width: 100%">
+            <el-option v-for="item in roles" :key="item.name" :value="item.flag"></el-option>
+          </el-select>
         </el-form-item>
+        <el-form-item label="性别" >
+          <el-radio-group v-model="form.sex">
+            <el-radio  :label="0">女</el-radio>
+            <el-radio  :label="1">男</el-radio>
+          </el-radio-group>
+        </el-form-item>
+
+
+
         <el-form-item label="邮箱">
           <el-input v-model="form.email" autocomplete="off"></el-input>
         </el-form-item>
@@ -143,10 +155,21 @@ export default {
       //批量操作
       multipleSelection: [],
       tableData: [],
+
+      //角色数组
+      roles:[],
     }
   },
   methods:{
     load(){
+
+      //roles赋值
+      this.request.get("/role").then(res =>{
+        if(res.code ==='200'){
+          this.roles = res.data
+        }
+      })
+
       this.request.get("/user/page",{
         params:{
           pageNum :this.pageNum,
@@ -157,15 +180,16 @@ export default {
         }
       }).then(res =>{
         if(res.code === '200'){
-          console.log(res)
           this.tableData = res.data.records
           this.total = res.data.total
         }else {
           this.$message.error(res.msg)
         }
-
-
       })
+
+
+
+
       // fetch("http://localhost:9090/user/page?pageNum="+this.pageNum+"&pageSize="+this.pageSize+"&username="+this.selectName+"&email="+this.selectEmail+"&address="+this.selectAddress).then(res=>res.json()).then(res =>{
       //   this.tableData = res.records;
       //   this.total = res.total;
@@ -244,7 +268,7 @@ export default {
 
     //更改0 1 为性别
     setSex(row,index) {
-      return row.sex == 0 ? '女' : '男'
+      return row.sex === 0 ? '女' : '男'
     }
   },
   created() {
