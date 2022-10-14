@@ -2,8 +2,10 @@ package com.qx.demo.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.qx.demo.common.Result;
+import com.qx.demo.entity.Menu;
 import com.qx.demo.entity.Role;
 import com.qx.demo.entity.RoleMenu;
+import com.qx.demo.mapper.MenuMapper;
 import com.qx.demo.mapper.RoleMapper;
 import com.qx.demo.mapper.RoleMenuMapper;
 import com.qx.demo.service.IRoleService;
@@ -12,7 +14,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.stream.Collectors;
 
@@ -30,6 +34,9 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements IR
     @Resource
     private RoleMenuMapper roleMenuMapper;
 
+    @Resource
+    private MenuMapper menuMapper;
+
     @Transactional
     @Override
     public void setRoleMenu(Integer roleId, List<Integer> menuIds) {
@@ -37,6 +44,7 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements IR
         QueryWrapper<RoleMenu> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("role_id",roleId);
         roleMenuMapper.delete(queryWrapper);
+
 
         //添加新的绑定菜单关系
         for (Integer menuId : menuIds) {
@@ -53,6 +61,18 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements IR
         QueryWrapper<RoleMenu> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("role_id",roleId);
         List<RoleMenu> roleMenu = roleMenuMapper.selectList(queryWrapper);
-        return roleMenu.stream().map(RoleMenu::getMenuId).collect(Collectors.toList());
+
+        //不全选二级菜单 没有一级菜单id
+        List<Integer> chIds = roleMenu.stream().map(RoleMenu::getMenuId).collect(Collectors.toList());
+
+//
+//        List<Menu> menus = menuMapper.selectList(null);
+//
+//
+//        for (Integer chId : chIds) {
+//            maps
+//        }
+
+        return chIds;
     }
 }

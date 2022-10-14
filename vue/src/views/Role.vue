@@ -276,7 +276,7 @@ export default {
     },
     //分配菜单保存请求
     saveRoleMenu(){
-      // console.log(this.$refs.tree.getCheckedKeys());
+      console.log("选中菜单id",this.$refs.tree.getCheckedKeys());
 
       this.request.post("/role/roleMenu/"+this.roleId,this.$refs.tree.getCheckedKeys()).then(res =>{
           if(res.code ==='200'){

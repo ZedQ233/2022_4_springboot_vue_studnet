@@ -104,6 +104,9 @@
         <el-form-item label="路径">
           <el-input v-model="form.path" autocomplete="off"></el-input>
         </el-form-item>
+        <el-form-item label="页面路径">
+          <el-input v-model="form.pagePath" autocomplete="off"></el-input>
+        </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">取 消</el-button>
@@ -183,7 +186,7 @@ export default {
     insert(pid){
       this.form = {};
       this.dialogFormVisible = true
-      if(pid){
+      if(pid.isNumber){
         this.form.pid = pid
       }
 

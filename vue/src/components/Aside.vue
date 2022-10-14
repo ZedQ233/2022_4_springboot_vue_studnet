@@ -113,6 +113,7 @@ export default {
       console.log(data)
     })
     console.log(this.$route.name)
+    console.log("opens",this.opens)
   },
   methods:{
 

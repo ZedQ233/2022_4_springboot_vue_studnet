@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8227c941-16dd-4e73-a9f6-2a5dcd389032" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_2_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/config/DruidConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/rebase___.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/rebase___.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/rebase___1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/rebase___1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/entity/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/components/Aside.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/Aside.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/Menu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Menu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/Role.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Role.vue" afterDir="false" />
     </list>
     <list id="7409663a-0cb7-4db8-974d-0539382c1135" name="Revert &quot;才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口 echarts统计季度分布折线图&quot;" comment="才发现 我忘记上传后端了！！！！ 后端现在完成了 mybatis-plus 代码生成器 jwt token request 用户接口 文件接口  echarts统计季度分布折线图" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +44,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -126,20 +129,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="npm.serve">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="localhost:8080" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/">
       <method v="2" />
     </configuration>
@@ -214,6 +204,7 @@
       <workItem from="1665582354162" duration="65000" />
       <workItem from="1665655153547" duration="12822000" />
       <workItem from="1665722189073" duration="1761000" />
+      <workItem from="1665728503386" duration="5650000" />
     </task>
     <task id="LOCAL-00001" summary="初步框架 前后端同步  未使用mybatis-plus">
       <created>1664261692934</created>
@@ -506,11 +497,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/qx/demo/test/KillController.java</url>
           <line>32</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qx/demo/service/impl/UserServiceImpl.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

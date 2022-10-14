@@ -68,6 +68,25 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             List<RoleMenu> Menus = roleMenuMapper.selectList(menuQueryWrapper);
             List<Integer> menuIds = Menus.stream().map(RoleMenu::getMenuId).collect(Collectors.toList());
 
+
+            //获取二级菜单的一级菜单id并添加
+            List<Integer> fIds = new ArrayList<>();
+                //获取所有菜单
+            List<Menu> menus = menuService.list();
+            for (Integer menuId : menuIds) {
+                for (Menu menu : menus) {
+                    if(menu.getId()==menuId && menu.getPid()!=null){
+                        if(!fIds.contains(menu.getPid()))
+                            fIds.add(menu.getPid());
+                        break;
+                    }
+
+                }
+            }
+            for (Integer fId : fIds) {
+                menuIds.add(fId);
+            }
+
             //查出所有1，2级菜单
             List<Menu> chilMenus = menuService.findChilMenus("");
 
